@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h4>Este es el text area</h4>
+
+    <p><textarea id="Texto" cols="30" rows="10" maxlength="100" onfocus="vaciar(this)"></textarea></p>
+    <p>Caractares disponibles :
+        <span id="cantidad">20</span>
+    </p>
+
+
+    <script>
+        function vaciar(vaciarcampos) {
+            vaciarcampos.value = '';
+        }
+
+        document.getElementById('Texto').addEventListener('keyup', caractares);
+
+        function caractares() {
+            let can = document.getElementById('Texto').value.length;
+            let dis = 20 - parseInt(can);
+
+
+            document.getElementById('cantidad').innerHTML = dis
+
+            if (dis == 0) {
+                alert('Cantidad de caracteres agotados')
+            }
+        }
+    </script>
+
+
+
+</body>
+
+</html>

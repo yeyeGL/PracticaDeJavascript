@@ -1,0 +1,8 @@
+{
+"Nombre": "Lionel Messi",
+"Posicion": "De portero y es el mejor", 
+"Pais": "Argentina",  
+"Goles":"840",
+"Clubes_Que_Participo": [ { "Club": "Barcelona", "Anio": 2004 }, { "Club": "Paris", "Anio": 2022} ],
+"Año_Que_Inicio": "2003"
+}

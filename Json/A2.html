@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prrr</title>
+</head>
+
+<body>
+
+
+    <div id="nombre"></div>
+
+
+    <script>
+        
+/*
+
+        let datosJson;
+        let xhr = new XMLHttpRequest();
+        xhr.open('GET', 'Persona.json', true);
+
+        xhr.responseType = "json";
+        xhr.onload = function () {
+
+            if (xhr.status === 200) {
+                datosJson = xhr.response;
+                let elementoTexto = document.getElementById('nombre');
+                elementoTexto.textContent = datosJson.Nombre + ' ' + datosJson.Telefono
+
+            } else {
+
+            }
+
+        }
+
+        xhr.send()
+*/
+
+
+
+        async function obtenerDatos() {
+            const respuesta = await fetch('Persona.json');
+            const datosJson = await respuesta.json();
+
+
+            const elementoTexto = document.getElementById('nombre');
+            elementoTexto.textContent = datosJson.Nombre;
+        }
+
+
+        obtenerDatos();
+    </script>
+
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h4>Ingrese sus datos por favor</h4>
+
+
+    <form>
+        Nombre<br>
+        <input type="text" id="Nombre" onfocus="vaciar(this)">
+        <br>
+        <br>
+        Edad<br>
+        <input type="text" id="Edad" onfocus="vaciar(this)">
+        <br>
+        <br>
+        Telefono<br>
+        <input type="text" id="Telefono" onfocus="vaciar(this)">
+        <br>
+        <br>
+
+        <input type="button" value="Confirmar" onclick="validar()">
+        <br>
+        <br>
+
+
+
+    </form>
+
+
+    <script>
+        function vaciar(camposvacios) {
+            camposvacios.value = ''
+        }
+
+
+        function validar() {
+            const edad = document.getElementById("Edad").value;
+            const telefono = document.getElementById("Telefono").value;
+
+            if (edad < 18) {
+                alert("Menor de edad");
+            } else if (!/^\d{10}$/.test(telefono)) {
+                alert("El número de teléfono debe tener 10 dígitos");
+            } else {
+                alert("Mensajes enviados correctamente");
+            }
+        }
+    </script>
+
+
+
+
+</body>
+
+</html>

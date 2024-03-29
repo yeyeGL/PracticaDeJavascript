@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h4>Seleccione el deporte para los juegos olimpicos</h4>
+
+
+    <form>
+
+        <input type="radio" id="radio1" name="sport"> Tenis<br>
+        <input type="radio" id="radio2" name="sport"> Futbol<br>
+        <input type="radio" id="radio3" name="sport"> Natacion<br>
+        <input type="radio" id="radio4" name="sport"> Voleibol<br>
+        <input type="radio" id="radio5" name="sport"> Patinaje<br>
+
+        <input type="button" value="Seleccionar" onclick="SeleccionarDeporte()">
+
+    </form>
+
+
+
+    <script>
+        function SeleccionarDeporte() {
+
+            if (document.getElementById('radio1').checked) {
+                alert('Deporte de raquetas')
+            }
+            if (document.getElementById('radio2').checked) {
+                alert('Deporte balon y 2 porterias')
+            }
+            if (document.getElementById('radio3').checked) {
+                alert('Deporte en el agua')
+            }
+            if (document.getElementById('radio4').checked) {
+                alert('Deporte dcon balon y malla en en el medio')
+            }
+            if (document.getElementById('radio5').checked) {
+                alert('Deporte con patines de ruedas')
+            }
+
+
+        }
+    </script>
+</body>
+
+</html>

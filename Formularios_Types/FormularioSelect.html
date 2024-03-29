@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <h4>Colores de semaforo</h4>
+
+
+    <form>
+        <p>
+            <select id="Select1" onchange="CambiarColor()">
+                <option value="Puede continuar">Verde</option>
+                <option value="Vaya frenando">Amarrillo</option>
+                <option value="Detenerse">Rojo</option>
+            </select>
+        </p>
+        <p> Indice seleccionado<input type="text" id="text1" size="1"></p>
+        <p>Color seleccionado<input type="text" id="text2" size="4"></p>
+        <p>Indicacion<input type="text" id="text3" size="10"></p>
+
+
+
+    </form>
+    <script>
+
+        function CambiarColor(){
+            let seleccion = document.getElementById('Select1');
+            document.getElementById('text1').value = seleccion.selectedIndex;
+            document.getElementById('text2').value = seleccion.options[seleccion.selectedIndex].text;
+            document.getElementById('text3').value = seleccion.options[seleccion.selectedIndex].value;
+
+
+        }
+    </script>
+
+
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+{
+    "Nombre":"Juan",
+    "Edad": 34,
+    "Estudiante": false,
+    "Direccion":{
+        "Calle": "Carrera primera",
+        "Ciudad": "Medellin"
+    },
+    "Telefono":[
+        "123-456-789",
+        "321-654-987"
+    ]
+
+}

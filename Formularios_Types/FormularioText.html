@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h4>Formulario con texto</h4>
+
+    <form>
+
+        Ingrese Usuario<br>
+        <input type="text" id="Usuario">
+        <br><br>
+        Ingrese la clave<br>
+        <input type="password" id="Codigo">
+        <br><br>
+        <input type="button" value="Confirmar" onclick="ValidarContraseña()">
+
+    </form>
+
+
+    <script>
+        let intentos = 3;
+        let clave = '12345'
+
+        function ValidarContraseña() {
+            let Codigo = document.getElementById('Codigo').value;
+
+            if (Codigo != clave || Codigo == '') {
+                alert('No eres bienvenido');
+                intentos--;
+                if (intentos == 0) {
+                    alert('No te quedan mas intetos')
+                }
+            } else {
+                window.open('https://www.google.com')
+            }
+
+        }
+    </script>
+
+
+
+</body>
+
+</html>

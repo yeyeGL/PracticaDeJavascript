@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <h4>Ingrese sus datos</h4>
+
+    Ingrese su Nombre
+    <br>
+    <input type="text" id="Nomb" onfocus="focus_()" onblur="blur_()">
+    <br>
+
+
+    <script>
+
+        function focus_(){
+            document.getElementById('Nomb').value = ''
+            document.getElementById('Nomb').style.background=''
+        }
+
+        function blur_(){
+            if(document.getElementById('Nomb').value == ''){
+                document.getElementById('Nomb').style.borderColor='red'
+                alert('Debe ingresar datos');
+            }
+        }
+
+
+
+    </script>
+
+
+
+    
+</body>
+</html>

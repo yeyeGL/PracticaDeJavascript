@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h4>Comentarios</h4>
+
+    <form>
+        <p><textarea id="Comentarios" cols="35" rows="7"></textarea></p>
+        <input type="button" value="Enviar" onclick="Comentario()">
+    </form>
+
+    <script>
+        let area = document.getElementById('Comentarios');
+        area.style.resize = 'none';
+
+        function Comentario() {
+
+            if (document.getElementById('Comentarios').value.length > 100) {
+                alert('El comentario es muy largo resumalo por favor')
+            } else {
+                alert('Mensaje enviado....Gracias')
+            }
+        }
+    </script>
+
+
+
+
+</body>
+
+</html>

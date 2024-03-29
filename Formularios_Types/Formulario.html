@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h4>Esto es un pequeño formulario con un boton</h4><br>
+
+    <form>
+
+        <input type="button" value="Incrementar" onclick="Incrementar()">
+        <input type="button" value="Sumar" onclick="Suma()">
+        <input type="button" value="Resta" onclick="Resta()">
+        <input type="button" value="Multiplicar" onclick="Multiplicacion()">
+        <input type="button" value="Divion" onclick="Divion()">
+
+
+
+    </form>
+
+
+
+    <script>
+
+        let contador = 0;
+
+        function Incrementar() {
+            contador++;
+            alert('El valor:' + contador)
+        }
+
+        let resultado;
+
+        function Suma() {
+            let num1 = parseInt(prompt('Ingrese numero a sumar:'));
+            let num2 = parseInt(prompt('Ingrese numero a sumar:'));
+            resultado = num1 + num2;
+            alert('La suma es :' + resultado)
+
+        }
+
+        function Resta() {
+            let num1 = parseInt(prompt('Ingrese numero a sumar:'));
+            let num2 = parseInt(prompt('Ingrese numero a sumar:'));
+            resultado = num1 - num2;
+            alert('La resta es :' + resultado)
+
+        }
+
+        function Multiplicacion() {
+            let num1 = parseInt(prompt('Ingrese numero a sumar:'));
+            let num2 = parseInt(prompt('Ingrese numero a sumar:'));
+            resultado = num1 * num2;
+            alert('La multiplicacion es :' + resultado)
+
+        }
+
+        function Divion() {
+            let num1 = parseInt(prompt('Ingrese numero a sumar:'));
+            let num2 = parseInt(prompt('Ingrese numero a sumar:'));
+            resultado = num1 / num2;
+            alert('La divion es :' + resultado)
+
+        }
+    </script>
+
+
+
+</body>
+
+</html>

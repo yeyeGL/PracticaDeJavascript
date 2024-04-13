@@ -12,7 +12,7 @@ function obtenerInfo() {
                 lista.appendChild(elemento1);
             }
         })
-        .catch(function (error) {
+        .catch( (error) => {
             console.error(error) 
         })
         

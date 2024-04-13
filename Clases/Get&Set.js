@@ -59,3 +59,5 @@ document.write('<br>')
 document.write("Goles actuales:", golesActuales);
 document.write('<br>')
 document.write("Nuevos goles:", nuevosGoles); 
+
+

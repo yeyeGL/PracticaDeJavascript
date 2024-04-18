@@ -12,9 +12,9 @@ for (let i in palabraa) {
 
 
 
-let palabra;
 
-palabra = prompt('Ingrese la palabra para saber las vocales');
+
+ let palabra = prompt('Ingrese la palabra para saber las vocales');
 vocal = 0;
 
 for (let i in palabra) {

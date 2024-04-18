@@ -35,7 +35,7 @@ document.write('<br>');
 
 // unir textos
 
-var palabra2 = ' que chimba';
+var palabra2 = 'Jumm no se que copar';
 document.write(saludo.concat(palabra2));
 document.write('<br>');
 
